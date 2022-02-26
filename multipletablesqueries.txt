@@ -48,3 +48,16 @@ SELECT COUNT(*)
 FROM newspaper
 JOIN online
 ON newspaper.id = online.id;
+
+4. Combining two tables and keep some of the un-matched rows
+
+SELECT *
+FROM newspaper
+LEFT JOIN online
+ON newspaper.id = online.id;
+
+SELECT *
+FROM newspaper
+LEFT JOIN online
+ON newspaper.id = online.id
+WHERE online.id IS NULL;
