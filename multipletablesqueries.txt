@@ -61,3 +61,11 @@ FROM newspaper
 LEFT JOIN online
 ON newspaper.id = online.id
 WHERE online.id IS NULL;
+
+5.Joining two tables using primary and foreign keys:
+
+SELECT *
+FROM classes
+JOIN students
+ON classes.id = students.class_id;
+
